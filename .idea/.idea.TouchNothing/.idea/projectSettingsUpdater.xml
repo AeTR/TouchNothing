@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
+=======
+﻿<?xml version="1.0" encoding="UTF-8"?>
+>>>>>>> 07c1e782d4d6521b3dc3fc4f3a28629365dfd11f
 <project version="4">
   <component name="RiderProjectSettingsUpdater">
     <option name="vcsConfiguration" value="1" />

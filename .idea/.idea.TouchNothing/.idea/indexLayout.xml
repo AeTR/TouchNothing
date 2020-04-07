@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelUserStore">
@@ -20,5 +21,13 @@
       <Path>Temp</Path>
       <Path>obj</Path>
     </explicitExcludes>
+=======
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelUserStore">
+    <attachedFolders />
+    <explicitIncludes />
+    <explicitExcludes />
+>>>>>>> 07c1e782d4d6521b3dc3fc4f3a28629365dfd11f
   </component>
 </project>
