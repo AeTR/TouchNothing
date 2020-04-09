@@ -14,6 +14,11 @@ public class PushBigButton : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        myAnimator.SetBool("Pressing", Input.GetKey(KeyCode.Space));
+        //myAnimator.SetBool("Pressing", Input.GetKey(KeyCode.Space));
+    }
+
+    public void PressButton()
+    {
+        myAnimator.SetBool("Pressing", Input.GetMouseButton(0));
     }
 }
