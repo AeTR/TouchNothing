@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
@@ -7,29 +6,17 @@
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="animBehavior.cs" t="Include" />
+        <e p="PlayerControll.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="AnimationChooser.cs" t="Include" />
           <e p="PushBigButton.cs" t="Include" />
         </e>
+        <e p="SelectionManager.cs" t="Include" />
       </e>
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
       <e p="Temp/bin" t="ExcludeRecursive" />
-=======
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ContentModelStore">
-    <e p="C:\Users\Euris\.Rider2019.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Euris\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_TouchNothing.2070653223.00" t="ExcludeRecursive" />
-    <e p="C:\Users\Euris\Desktop\FINAL\TouchNothing" t="IncludeRecursive">
-      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
-      <e p="Assets" t="Include">
-        <e p="animBehavior.cs" t="Include" />
-      </e>
-      <e p="obj" t="ExcludeRecursive" />
-      <e p="packages" t="ExcludeRecursive" />
-      <e p="Temp\bin" t="ExcludeRecursive" />
->>>>>>> 07c1e782d4d6521b3dc3fc4f3a28629365dfd11f
       <e p="TouchNothing.sln" t="IncludeFlat" />
     </e>
   </component>
