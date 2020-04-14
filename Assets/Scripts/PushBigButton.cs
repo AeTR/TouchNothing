@@ -17,8 +17,9 @@ public class PushBigButton : MonoBehaviour
         //myAnimator.SetBool("Pressing", Input.GetKey(KeyCode.Space));
     }
 
-    public void PressButton()
+    public void Interact()
     {
         myAnimator.SetBool("Pressing", Input.GetMouseButton(0));
+        
     }
 }

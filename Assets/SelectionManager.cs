@@ -8,7 +8,9 @@ public class SelectionManager : MonoBehaviour
     public float maxRaycastDist = 1000f;
 
     private Transform _selection;
-
+    private bool isMouseDragging = false;
+    private Vector3 screenPosition;
+    private Vector3 offset;
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +21,7 @@ public class SelectionManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //raycast thing 
+         
         Ray camRay = new Ray(Camera.main.transform.position, Camera.main.transform.forward);
         Debug.DrawRay(camRay.origin, camRay.direction * maxRaycastDist, Color.green);
 
@@ -28,12 +30,35 @@ public class SelectionManager : MonoBehaviour
         {
 
             var selection = hitObject.transform;
-                if (Input.GetMouseButton(0))
+            Debug.Log(selection.name);
+            if (Input.GetMouseButtonDown(0))
+            {
+                if (selection.CompareTag("Lever"))
                 {
-                    selection.SendMessage("PressButton");
-                }
+                //selection.Translate(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"), 0);
+                isMouseDragging = true;
+                screenPosition = Camera.main.WorldToScreenPoint(selection.transform.position);
+                offset = selection.transform.position - Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPosition.z)); 
 
-                _selection = selection;
+                }
+                else
+                {
+                    selection.SendMessage("Interact");
+                }
+            }
+            if (Input.GetMouseButtonUp(0))
+            {
+                isMouseDragging = false;
+            }
+            if (isMouseDragging)
+            {
+                Vector3 currentScreenSpace = new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPosition.z);
+                Vector3 currentPosition = Camera.main.ScreenToWorldPoint(currentScreenSpace) + offset;
+                selection.transform.position = currentPosition;
+
+            }
+
+            _selection = selection;
 
         }
     }

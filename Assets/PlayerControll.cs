@@ -22,7 +22,7 @@ public class PlayerControll : MonoBehaviour
 
     void Update()
     {
-        Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.lockState = CursorLockMode.Locked;
 
         //  GET MOUSELOOK
         mouseX = Input.GetAxis("Mouse X");
