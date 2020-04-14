@@ -17,7 +17,7 @@ public class switchanimationControl : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.A)) 
         {
-            switchAnim.SetTrigger("Switch");
+            switchAnim.SetTrigger("Pull");
         }
         
     }
