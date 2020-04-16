@@ -620,6 +620,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f041cc72961242b4b8a1e7d42081c2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myToolState: 0
   maxRaycastDist: 1000
 --- !u!1 &1593836652
 GameObject:
@@ -6996,13 +6997,62 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5006512735709336270}
+  - component: {fileID: 8296172668831031519}
+  - component: {fileID: 8296172668831031518}
+  - component: {fileID: 8296172668831031520}
   m_Layer: 0
   m_Name: Switch
-  m_TagString: Untagged
+  m_TagString: MechanismSwitch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &8296172668831031518
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8296172668831031517}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 919a2283f5af41545bd45b1d60cb977e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8296172668831031519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8296172668831031517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f89d7c5896cd14d94869dea0753f7b2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myAnimator: {fileID: 8296172668831031518}
+  oneShot: 0
+--- !u!65 &8296172668831031520
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8296172668831031517}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.673835, y: 2.9019737, z: 2.333094}
+  m_Center: {x: -0.068791114, y: 0.081483044, z: -0.32367852}
 --- !u!1 &8296172668962294925
 GameObject:
   m_ObjectHideFlags: 0

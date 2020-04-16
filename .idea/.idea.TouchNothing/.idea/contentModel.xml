@@ -12,6 +12,7 @@
           <e p="DragLever.cs" t="Include" />
           <e p="leverAnimBehavior.cs" t="Include" />
           <e p="MechanismScript.cs" t="Include" />
+          <e p="movingPanelAnimBehavior.cs" t="Include" />
           <e p="ObstacleScript.cs" t="Include" />
           <e p="PlayerControll.cs" t="Include" />
           <e p="PushBigButton.cs" t="Include" />
