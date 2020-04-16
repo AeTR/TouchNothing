@@ -4,7 +4,10 @@ using UnityEngine;
 //The mechanism script is used by all switches, levers, and buttons. Pretty much everything interactable that isn't a tool or an obstacle.
 public class MechanismScript : MonoBehaviour
 {
-    
+
+    public Animator myAnimator;
+    public bool oneShot; //true if animation will return to neutral after finishing.
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,5 +18,15 @@ public class MechanismScript : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void Interact()
+    {
+        //weed
+        //play an animation once and and possibly return to neutral???
+        //play a frickin' cool sound effect, brother!!
+        //profit
+        
+        myAnimator.SetTrigger("Interact");
     }
 }

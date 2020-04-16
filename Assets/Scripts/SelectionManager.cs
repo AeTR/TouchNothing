@@ -44,6 +44,15 @@ public class SelectionManager : MonoBehaviour
             {
                 
             }
+
+            if (selection.gameObject.tag.Contains("Mechanism"))
+            {
+                if (myToolState == ToolState.None && Input.GetMouseButtonDown(0))
+                {
+                    selection.SendMessage("Interact");
+                } 
+            }
+            
             if (Input.GetMouseButtonDown(0))
             {
                 if (selection.CompareTag("Lever"))
@@ -56,7 +65,7 @@ public class SelectionManager : MonoBehaviour
                 }
                 else
                 {
-                    selection.SendMessage("Interact");
+                    selection.GetComponent<MechanismScript>().SendMessage("Interact");
                 }
             }
             if (Input.GetMouseButtonUp(0))
