@@ -7,6 +7,14 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="animBehavior.cs" t="Include" />
+        <e p="PlayerControll.cs" t="Include" />
+        <e p="Scripts" t="Include">
+          <e p="AnimationChooser.cs" t="Include" />
+          <e p="DragLever.cs" t="Include" />
+          <e p="leverAnimBehavior.cs" t="Include" />
+          <e p="PushBigButton.cs" t="Include" />
+        </e>
+        <e p="SelectionManager.cs" t="Include" />
         <e p="switchanimationControl.cs" t="Include" />
       </e>
       <e p="obj" t="ExcludeRecursive" />
