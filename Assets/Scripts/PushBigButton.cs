@@ -21,7 +21,7 @@ public class PushBigButton : MechanismScript
 
     public void Interact()
     {
-        myAnimator.SetBool("Pressing", Input.GetMouseButton(0));
+        myAnimator.SetTrigger("PressingAgain");
         if (!pressedYet)
         {
             pressedYet = true;
