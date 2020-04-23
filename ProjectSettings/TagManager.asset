@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Lever
   - MechanismSwitch
+  - MechanismButton
+  - MechanismLever
   layers:
   - Default
   - TransparentFX

@@ -39,7 +39,7 @@ public class SelectionManager : MonoBehaviour
         {
 
             var selection = hitObject.transform;
-            Debug.Log(selection.name);
+            //Debug.Log(selection.name);
             if (Input.GetMouseButtonDown(1) && selection.gameObject.tag.Contains("Tool"))
             {
                 
@@ -62,10 +62,6 @@ public class SelectionManager : MonoBehaviour
                     screenPosition = Camera.main.WorldToScreenPoint(selection.transform.position);
                     offset = selection.transform.position - Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPosition.z)); 
 
-                }
-                else
-                {
-                    selection.GetComponent<MechanismScript>().SendMessage("Interact");
                 }
             }
             if (Input.GetMouseButtonUp(0))
