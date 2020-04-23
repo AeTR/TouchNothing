@@ -9,15 +9,21 @@
         <e p="Scripts" t="Include">
           <e p="AnimationChooser.cs" t="Include" />
           <e p="animBehavior.cs" t="Include" />
+          <e p="BiggerButton.cs" t="Include" />
+          <e p="ButtonPuzzleScript.cs" t="Include" />
           <e p="classScript.cs" t="Include" />
+          <e p="ColorButton.cs" t="Include" />
           <e p="DragLever.cs" t="Include" />
+          <e p="FleetPanel.cs" t="Include" />
           <e p="leverAnimBehavior.cs" t="Include" />
+          <e p="MatchButton.cs" t="Include" />
           <e p="MechanismScript.cs" t="Include" />
           <e p="movingPanelAnimBehavior.cs" t="Include" />
           <e p="ObstacleScript.cs" t="Include" />
           <e p="PlayerControll.cs" t="Include" />
           <e p="PushBigButton.cs" t="Include" />
           <e p="SelectionManager.cs" t="Include" />
+          <e p="SwapButton.cs" t="Include" />
           <e p="switchanimationControl.cs" t="Include" />
           <e p="ToolScript.cs" t="Include" />
         </e>
