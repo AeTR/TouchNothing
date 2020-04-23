@@ -120,7 +120,7 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 0ffb785bc434c37439a2c3d204118941, type: 2}
 --- !u!1 &109095868 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 2434fdec5a2de4627ade916508d280fe,
@@ -235,8 +235,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 838518457}
-  m_LocalRotation: {x: -0.14451927, y: 0.80411994, z: -0.21762833, w: -0.5339881}
-  m_LocalPosition: {x: 7.7882867, y: 4.7234583, z: 2.0908794}
+  m_LocalRotation: {x: 0.060821302, y: -0.9326871, z: 0.18799731, w: 0.30174932}
+  m_LocalPosition: {x: 11.783776, y: 7.3288374, z: 11.495548}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -359,6 +359,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Switch
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: af341a549b9e99c47b2ac874beb111bf,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af341a549b9e99c47b2ac874beb111bf, type: 3}
 --- !u!1 &1300768608
@@ -381,7 +386,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1300768609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -604,6 +609,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: bendyBoi
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 8c80717ef0f308f4cb814391c6f406ea,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1890798296313910702, guid: 8c80717ef0f308f4cb814391c6f406ea,
         type: 3}
@@ -841,7 +851,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &1721659408
 Animator:
   serializedVersion: 3
@@ -952,7 +962,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!65 &1773446210
 BoxCollider:
@@ -1262,6 +1272,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: lever
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 2434fdec5a2de4627ade916508d280fe,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2434fdec5a2de4627ade916508d280fe, type: 3}

@@ -9,6 +9,7 @@
         <e p="Scripts" t="Include">
           <e p="AnimationChooser.cs" t="Include" />
           <e p="animBehavior.cs" t="Include" />
+          <e p="classScript.cs" t="Include" />
           <e p="DragLever.cs" t="Include" />
           <e p="leverAnimBehavior.cs" t="Include" />
           <e p="MechanismScript.cs" t="Include" />
