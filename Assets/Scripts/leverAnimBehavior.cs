@@ -2,22 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class leverAnimBehavior : MonoBehaviour
+public class leverAnimBehavior : MechanismScript
 {
-    public Animator switchAnim;
-    
-    // Start is called before the first frame update
+    public GameObject nextThing;
+    public bool thrusted;
+
     void Start()
     {
-        
+        thrusted = false;
     }
-
-    // Update is called once per frame
-    void Update()
+    public new void Interact()
     {
-        if (Input.GetKey(KeyCode.A)) 
+        if (!thrusted)
         {
-            switchAnim.SetTrigger("pushDown");
+            myAnimator.SetTrigger(interactTrigger);
+            nextThing.SetActive(true);
         }
     }
 }

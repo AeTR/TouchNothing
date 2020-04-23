@@ -6,6 +6,7 @@ public class MechanismScript : MonoBehaviour
 {
 
     public Animator myAnimator;
+    public string interactTrigger;
     public bool oneShot; //true if animation will return to neutral after finishing.
 
     // Start is called before the first frame update
@@ -27,6 +28,13 @@ public class MechanismScript : MonoBehaviour
         //play a frickin' cool sound effect, brother!!
         //profit
         
-        myAnimator.SetTrigger("Interact");
+        myAnimator.SetTrigger(interactTrigger);
+        InteractEvent();
+        //Debug.Log("Interacting!");
+    }
+
+    public void InteractEvent()
+    {
+        
     }
 }

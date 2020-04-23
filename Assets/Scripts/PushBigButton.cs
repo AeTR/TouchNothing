@@ -2,13 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PushBigButton : MonoBehaviour
+public class PushBigButton : MechanismScript
 {
-    public Animator myAnimator;
+    public GameObject fleetButtons;
+
+    public bool pressedYet;
     // Start is called before the first frame update
     void Start()
     {
-        myAnimator = GetComponent<Animator>();
+        pressedYet = false;
     }
 
     // Update is called once per frame
@@ -20,6 +22,10 @@ public class PushBigButton : MonoBehaviour
     public void Interact()
     {
         myAnimator.SetBool("Pressing", Input.GetMouseButton(0));
-        
+        if (!pressedYet)
+        {
+            pressedYet = true;
+            fleetButtons.SetActive(true);
+        }
     }
 }
