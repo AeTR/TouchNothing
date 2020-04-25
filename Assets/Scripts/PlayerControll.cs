@@ -15,6 +15,11 @@ public class PlayerControll : MonoBehaviour
 
     float xRotation = 0f;
 
+    void Awake()
+    {
+        Cursor.visible = false;
+    }
+    
     void Start()
     {
         thisCharacterController = GetComponent<CharacterController>();
