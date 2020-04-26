@@ -19,7 +19,7 @@ public class PushBigButton : MechanismScript
         //myAnimator.SetBool("Pressing", Input.GetKey(KeyCode.Space));
     }
 
-    public void Interact()
+    public new void Interact()
     {
         myAnimator.SetBool("Pressing", Input.GetMouseButton(0));
         if (!pressedYet)

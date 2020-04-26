@@ -31,6 +31,7 @@ public class FleetPanel : MonoBehaviour
             if (currentNum >= properOrder.Length && !solvedYet)
             {
                 nextThing.SetActive(true);
+                gameObject.SetActive(false);
             }
         }
         else
