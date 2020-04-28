@@ -29,6 +29,7 @@
           <e p="SwapButton.cs" t="Include" />
           <e p="switchanimationControl.cs" t="Include" />
           <e p="SwitchPuzzle.cs" t="Include" />
+          <e p="Timer.cs" t="Include" />
           <e p="ToolScript.cs" t="Include" />
         </e>
       </e>
