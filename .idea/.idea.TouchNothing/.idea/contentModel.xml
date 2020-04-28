@@ -24,6 +24,7 @@
           <e p="ObstacleScript.cs" t="Include" />
           <e p="PlayerControll.cs" t="Include" />
           <e p="PushBigButton.cs" t="Include" />
+          <e p="PuzzleScript.cs" t="Include" />
           <e p="SelectionManager.cs" t="Include" />
           <e p="SingleSwitch.cs" t="Include" />
           <e p="SwapButton.cs" t="Include" />

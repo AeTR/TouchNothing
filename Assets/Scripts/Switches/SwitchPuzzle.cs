@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SwitchPuzzle : MonoBehaviour
+public class SwitchPuzzle : PuzzleScript
 {
     public SingleSwitch[] allSwitches;
-    public GameObject nextThing;
     public bool[] switchSolution;
     // Start is called before the first frame update
     void Start()
@@ -28,9 +27,9 @@ public class SwitchPuzzle : MonoBehaviour
         if (correct)
         {
             Debug.Log("You did it!");
-            nextThing.SetActive(true);
-            gameObject.SetActive(false);
-            //do a thing
+            Solve();
+            IncreaseTime(10f);
+            //gameObject.SetActive(false);
         }
         else
         {
