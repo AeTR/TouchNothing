@@ -17,11 +17,11 @@ public class FleetPanel : PuzzleScript
             {
                 Solve();
                 IncreaseTime(15f);
-                gameObject.SetActive(false);
             }
         }
         else
         {
+            Debug.Log("Frack");
             DecreaseTime(3f);
             currentNum = 0;
         }

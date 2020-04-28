@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ButtonPuzzleScript : MonoBehaviour
+public class ButtonPuzzleScript : PuzzleScript
 {
     public MatchButton.SymbolState[] layoutArray, solutionArray;
 
@@ -74,14 +74,16 @@ public class ButtonPuzzleScript : MonoBehaviour
             if (currentKey >= 9)
             {
                 Debug.Log("Puzzle freakin solved");
+                IncreaseTime(7f);
                 //puzzle solved, do the thing
-                nextThing.SetActive(true);
+                Solve();
             }
         }
         else
         {
             Debug.Log("Incorrect");
             currentKey = 0;
+            DecreaseTime(2f);
             //reduce the timer
             //play bad sound
         }

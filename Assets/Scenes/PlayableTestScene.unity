@@ -895,7 +895,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 30
+  m_Text: 
 --- !u!222 &275904490
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1069,6 +1069,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3718b4262ba44fd6b2963289931abbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextPuzzle: {fileID: 0}
+  myTimer: {fileID: 0}
+  solved: 0
   allSwitches:
   - {fileID: 2876029484392089491}
   - {fileID: 612717505}
@@ -1080,7 +1083,6 @@ MonoBehaviour:
   - {fileID: 387803034}
   - {fileID: 1976252060}
   - {fileID: 143665167}
-  nextThing: {fileID: 8296172667775118962}
   switchSolution: 
 --- !u!1001 &387803030
 PrefabInstance:
@@ -2394,7 +2396,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeUp: 0
-  timerText: {fileID: 0}
+  timerText: {fileID: 275904489}
   timeLeft: 0
 --- !u!1 &1157468932 stripped
 GameObject:
@@ -3101,7 +3103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myAnimator: {fileID: 1346447675}
-  interactTrigger: Pressing
+  interactTrigger: PressingAgain
   oneShot: 0
 --- !u!65 &1527684314
 BoxCollider:
@@ -3133,7 +3135,7 @@ MonoBehaviour:
   oneShot: 0
   fleetButtons: {fileID: 8296172668977149432}
   pressedYet: 0
-  myTimer: {fileID: 0}
+  myTimer: {fileID: 725826866}
 --- !u!1 &1783087217 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3625160768685705291, guid: 8c0dac352b54a4e61a3229df14d8bbad,
@@ -5313,6 +5315,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 364192f3d6e5b47428d913eb8868d934, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextPuzzle: {fileID: 0}
+  myTimer: {fileID: 0}
+  solved: 0
   layoutArray: 010000000200000000000000030000000400000005000000060000000700000008000000
   solutionArray: 080000000400000003000000000000000500000007000000060000000200000001000000
   currentSymbol: 0
@@ -5441,10 +5446,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 017aaf28bc04445f3ad4619a01dbc02a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  properOrder: 0300000001000000040000000200000000000000
+  nextPuzzle: {fileID: 810056965}
+  myTimer: {fileID: 725826866}
+  solved: 0
+  properOrder: 0300000001000000020000000400000000000000
   currentNum: 0
-  nextThing: {fileID: 8296172668172249859}
-  solvedYet: 0
 --- !u!1001 &8346270004654685741
 PrefabInstance:
   m_ObjectHideFlags: 0

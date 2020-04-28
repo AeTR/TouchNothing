@@ -21,25 +21,21 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!timeUp)
+        /*
+        timeLeft -= Time.deltaTime;
+        timerText.text = Mathf.RoundToInt(timeLeft).ToString();
+        if (timeLeft <= 0f && !timeUp)
         {
-            timeLeft -= Time.deltaTime;
-            if (timeLeft <= 0f)
-            {
-                timeUp = true;
-                timerText.text = "Press R to Restart";
-            }
-            else
-            {
-                timerText.text = Mathf.RoundToInt(timeLeft).ToString();
-            }
+            timeUp = true;
+            timerText.text = "Press R to Restart";
         }
-        else
+        if (timeUp)
         {
             if (Input.GetKeyDown(KeyCode.R))
             {
                 SceneManager.LoadScene("PlayableTestScene");
             }
         }
+        */
     }
 }

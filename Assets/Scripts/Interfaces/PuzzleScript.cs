@@ -21,11 +21,14 @@ public abstract class PuzzleScript : MonoBehaviour
 
     public void IncreaseTime(float increaseAmount)
     {
-        myTimer.timeLeft += increaseAmount;
+        //myTimer.timeLeft += increaseAmount;
+        //myTimer.timerText.text = Mathf.RoundToInt(myTimer.timeLeft).ToString();
     }
 
     public void DecreaseTime(float decreaseAmount)
     {
-        myTimer.timeLeft -= decreaseAmount;
+        //Debug.Log("Decreasing");
+        //myTimer.timeLeft -= decreaseAmount;
+        //myTimer.timerText.text = Mathf.RoundToInt(myTimer.timeLeft).ToString();
     }
 }
