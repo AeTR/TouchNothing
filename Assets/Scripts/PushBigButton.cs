@@ -7,16 +7,12 @@ public class PushBigButton : MechanismScript
     public GameObject fleetButtons;
 
     public bool pressedYet;
+
+    public Timer myTimer;
     // Start is called before the first frame update
     void Start()
     {
         pressedYet = false;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        //myAnimator.SetBool("Pressing", Input.GetKey(KeyCode.Space));
     }
 
     public new void Interact()
@@ -26,6 +22,7 @@ public class PushBigButton : MechanismScript
         {
             pressedYet = true;
             fleetButtons.SetActive(true);
+            myTimer.timeLeft += 10f;
         }
     }
 }

@@ -12,6 +12,7 @@ public class PlayerControll : MonoBehaviour
     public float mouseX, mouseY;
     public float moveSpeed = 2f;
     public Vector3 inputVector;
+    public Timer myTimer;
 
     float xRotation = 0f;
 
@@ -43,10 +44,12 @@ public class PlayerControll : MonoBehaviour
 
         forwardBackward = Input.GetAxis("Vertical");
         rightLeft = Input.GetAxis("Horizontal");
-
-        inputVector = transform.forward * forwardBackward;
-        inputVector += transform.right * rightLeft;
-        thisCharacterController.Move(inputVector * moveSpeed + (Physics.gravity * .69f));
+        if (!myTimer.timeUp)
+        {
+            inputVector = transform.forward * forwardBackward;
+            inputVector += transform.right * rightLeft;
+            thisCharacterController.Move(inputVector * moveSpeed + (Physics.gravity * .69f));
+        }
     }
    
 }

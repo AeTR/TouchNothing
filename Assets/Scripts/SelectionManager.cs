@@ -20,6 +20,7 @@ public class SelectionManager : MonoBehaviour
     private bool isMouseDragging = false;
     private Vector3 screenPosition;
     private Vector3 offset;
+    public Timer myTimer;
 
     // Start is called before the first frame update
     void Start()
@@ -47,7 +48,7 @@ public class SelectionManager : MonoBehaviour
 
             if (selection.gameObject.tag.Contains("Mechanism"))
             {
-                if (myToolState == ToolState.None && Input.GetMouseButtonDown(0))
+                if (myToolState == ToolState.None && Input.GetMouseButtonDown(0) && !myTimer.timeUp)
                 {
                     selection.SendMessage("Interact");
                 } 
