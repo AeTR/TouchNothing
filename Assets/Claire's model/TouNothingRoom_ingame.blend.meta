@@ -32,6 +32,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: bigwall
+    second: {fileID: 2100000, guid: c129ba3ae45184cc282478da2a0edba1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: black.001
     second: {fileID: 2100000, guid: d925af6aabc5a4a0385e4ba625e8e297, type: 2}
   - first:
@@ -84,6 +89,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: realWhite
     second: {fileID: 2100000, guid: 0b23b992834134568a33f93ffdfaea5e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: smallwall
+    second: {fileID: 2100000, guid: 8efea9565a08b44539afc78f5c74a6b5, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
