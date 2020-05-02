@@ -21,7 +21,6 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*
         timeLeft -= Time.deltaTime;
         timerText.text = Mathf.RoundToInt(timeLeft).ToString();
         if (timeLeft <= 0f && !timeUp)
@@ -36,6 +35,5 @@ public class Timer : MonoBehaviour
                 SceneManager.LoadScene("PlayableTestScene");
             }
         }
-        */
     }
 }

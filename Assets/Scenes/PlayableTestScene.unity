@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1510536991}
-  m_IndirectSpecularColor: {r: 0.4465772, g: 0.49641073, b: 0.57481915, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657713, g: 0.49641097, b: 0.5748189, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -730,7 +730,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: 120
 --- !u!222 &275904490
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -811,8 +811,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3718b4262ba44fd6b2963289931abbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextPuzzle: {fileID: 0}
-  myTimer: {fileID: 0}
+  nextPuzzle: {fileID: 8296172667775118962}
+  myTimer: {fileID: 1076443892}
   solved: 0
   allSwitches:
   - {fileID: 2876029484392089491}
@@ -2136,7 +2136,7 @@ PrefabInstance:
     - target: {fileID: 7192991918448267149, guid: f0285e0ecfdf04cc79cd03e8526d589a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.24
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 7192991918448267149, guid: f0285e0ecfdf04cc79cd03e8526d589a,
         type: 3}
@@ -2879,6 +2879,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7529958206792193578, guid: 20bfc50a2da1f4896b2925c70375b04b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.09229599
+      objectReference: {fileID: 0}
+    - target: {fileID: -7529958206792193578, guid: 20bfc50a2da1f4896b2925c70375b04b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -15.000001
+      objectReference: {fileID: 0}
+    - target: {fileID: -7529958206792193578, guid: 20bfc50a2da1f4896b2925c70375b04b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.09229599
+      objectReference: {fileID: 0}
+    - target: {fileID: -7529958206792193578, guid: 20bfc50a2da1f4896b2925c70375b04b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7010574
+      objectReference: {fileID: 0}
+    - target: {fileID: -7529958206792193578, guid: 20bfc50a2da1f4896b2925c70375b04b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7010574
+      objectReference: {fileID: 0}
+    - target: {fileID: -7529958206792193578, guid: 20bfc50a2da1f4896b2925c70375b04b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 20bfc50a2da1f4896b2925c70375b04b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5291,22 +5321,22 @@ PrefabInstance:
     - target: {fileID: 7798985200230597874, guid: 60c7917e049ff4905ae709add5dc04d2,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.4115879
+      value: -0.41158792
       objectReference: {fileID: 0}
     - target: {fileID: 7798985200230597874, guid: 60c7917e049ff4905ae709add5dc04d2,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.5749743
+      value: -0.57497436
       objectReference: {fileID: 0}
     - target: {fileID: 7798985200230597874, guid: 60c7917e049ff4905ae709add5dc04d2,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.41158807
+      value: -0.4115881
       objectReference: {fileID: 0}
     - target: {fileID: 7798985200230597874, guid: 60c7917e049ff4905ae709add5dc04d2,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.57497406
+      value: 0.5749741
       objectReference: {fileID: 0}
     - target: {fileID: 7798985200230597874, guid: 60c7917e049ff4905ae709add5dc04d2,
         type: 3}
@@ -5979,8 +6009,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 364192f3d6e5b47428d913eb8868d934, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextPuzzle: {fileID: 0}
-  myTimer: {fileID: 0}
+  nextPuzzle: {fileID: 6163736646844133465}
+  myTimer: {fileID: 1076443892}
   solved: 0
   layoutArray: 010000000200000000000000030000000400000005000000060000000700000008000000
   solutionArray: 080000000400000003000000000000000500000007000000060000000200000001000000
@@ -6110,7 +6140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 017aaf28bc04445f3ad4619a01dbc02a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextPuzzle: {fileID: 810056965}
+  nextPuzzle: {fileID: 8296172668172249859}
   myTimer: {fileID: 725826866}
   solved: 0
   properOrder: 0300000001000000020000000400000000000000

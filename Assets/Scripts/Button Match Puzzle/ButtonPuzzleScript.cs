@@ -17,8 +17,6 @@ public class ButtonPuzzleScript : PuzzleScript
     public Animator myAnim;
 
     public string arrowString;
-
-    public GameObject nextThing;
     // Start is called before the first frame update
     void Start()
     {
