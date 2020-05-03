@@ -39,6 +39,7 @@
             <e p="PuzzleScript.cs" t="Include" />
           </e>
           <e p="juiceScript.cs" t="Include" />
+          <e p="MonoManager.cs" t="Include" />
           <e p="Nav Arrows" t="Include">
             <e p="ArrowPuzzle.cs" t="Include" />
             <e p="NavArrow.cs" t="Include" />
