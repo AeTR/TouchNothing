@@ -6,23 +6,18 @@ public class curveScript : MonoBehaviour
 {
     public AnimationCurve animCurve;
     public Transform curveBoi;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space));
+        if (Input.GetKeyDown(KeyCode.Space))
         {
+            Debug.Log("Space bar pressed.");
             StartCoroutine(SmoothOperator());
         }
     }
 
-    private IEnumerator SmoothOperator()
+    IEnumerator SmoothOperator()
     {
         Vector3 start = this.transform.position;
 
