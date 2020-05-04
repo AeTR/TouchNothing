@@ -38,6 +38,7 @@ public class MonoManager : MonoBehaviour
 
     public void LoadMonologue()
     {
+        mySource.Stop();
         if (currentNum >= 12)
         {
             hintText.text = "Click to begin!";
