@@ -604,6 +604,7 @@ MonoBehaviour:
   - "We\u2019re sorry, your call has been interrupted due to excessive damage suffered
     by the ship\u2019s hull. Try again in a couple space-hours."
   - We thank you for your patience!
+  finalText: Click to begin!
   mySource: {fileID: 767379962}
   monologueClips:
   - {fileID: 8300000, guid: 4eea2b680ca51427badd368e89b4c960, type: 3}
@@ -622,6 +623,7 @@ MonoBehaviour:
   monologueText: {fileID: 1474271273}
   hintText: {fileID: 382690093}
   currentNum: 0
+  opener: 1
 --- !u!1 &1333685509
 GameObject:
   m_ObjectHideFlags: 0

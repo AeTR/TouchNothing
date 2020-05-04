@@ -8,6 +8,6 @@ public class BiggerButton : MechanismScript
 
     public new void Interact()
     {
-        SceneManager.LoadScene("PlaceholderWin");
+        SceneManager.LoadScene("Win Scene");
     }
 }

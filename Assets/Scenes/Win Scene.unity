@@ -481,29 +481,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textLines:
-  - Welcome, cadet!
-  - Congratulations for graduating the TurboCorp Space Pilot Academy, class of 4078.
-  - As you may know, every year the top student at the academy gets the singular
-    honor of piloting the university starship back into TurboCorp space station.
-  - This year, that student is you!
-  - "In mere moments, you\u2019ll be brought to the command center of our TurboCorp
-    Academy Spacecraft, where you will have the opportunity to pilot the craft all
-    by yourself."
-  - "Just remember, the rest of us are on board, so don\u2019t totally goof it, or
-    else we\u2019ll all die and it\u2019ll be your fault!Just remember, the rest
-    of us are on board, so don\u2019t totally goof it, or else we\u2019ll all die
-    and it\u2019ll be your fault!"
+  - Ahaha! Wonderful!
+  - "Great job, cadet, you\u2019ve successfully docked us at the space station!"
+  - Of course, this was all a simulation. In actuality, we docked at the space station
+    last night while you were all asleep!
+  - "That\u2019s right, you just got pranked hard!"
+  - This is a tradition we have every year to prank the top student for being such
+    a nerd.
+  - "Now get out there and accept your diploma, you\u2019ve earned it!"
+  finalText: Press Esc to Quit!
   mySource: {fileID: 978935760}
   monologueClips:
-  - {fileID: 8300000, guid: 4eea2b680ca51427badd368e89b4c960, type: 3}
-  - {fileID: 8300000, guid: 61f60ff5475674d97a7244fdff47476a, type: 3}
-  - {fileID: 8300000, guid: 263823b81ac0742f1a8b019e49511762, type: 3}
-  - {fileID: 8300000, guid: 0d01512e93b674f4a9027da73170cfe6, type: 3}
-  - {fileID: 8300000, guid: 14508f053f8ab433a9c36deac0ee95d0, type: 3}
-  - {fileID: 8300000, guid: 8357ed89a7d814afebcbfbba0c9951c8, type: 3}
+  - {fileID: 8300000, guid: a02da61f634864d889e5e30ca46a34f5, type: 3}
+  - {fileID: 8300000, guid: 54c97981d0f88420d9ccf63cb7dd34d3, type: 3}
+  - {fileID: 8300000, guid: e49913ba58e7f4fd5b6ee51c0aa04a11, type: 3}
+  - {fileID: 8300000, guid: 49cfa36b8d2014877b182a6aa5406f21, type: 3}
+  - {fileID: 8300000, guid: 7c2b875eb16654a778a02ffff0285202, type: 3}
+  - {fileID: 8300000, guid: cbf682f4d64ab4d07ad7b87b2cf1b242, type: 3}
   monologueText: {fileID: 282270222}
   hintText: {fileID: 1283617543}
   currentNum: 0
+  opener: 0
 --- !u!4 &978935762
 Transform:
   m_ObjectHideFlags: 0

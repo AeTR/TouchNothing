@@ -7,10 +7,12 @@ using UnityEngine.UI;
 public class MonoManager : MonoBehaviour
 {
     public string[] textLines;
+    public string finalText;
     public AudioSource mySource;
     public AudioClip[] monologueClips;
     public Text monologueText, hintText;
     public int currentNum;
+    public bool opener;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,14 +26,17 @@ public class MonoManager : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            if (currentNum < 12)
+            if (currentNum < textLines.Length)
             {
                 currentNum++;
                 LoadMonologue();
             }
             else
             {
-                SceneManager.LoadScene("PlayableTestScene");
+                if (opener)
+                {
+                    SceneManager.LoadScene("PlayableTestScene");
+                }
             }
         }
     }
@@ -39,9 +44,9 @@ public class MonoManager : MonoBehaviour
     public void LoadMonologue()
     {
         mySource.Stop();
-        if (currentNum >= 12)
+        if (currentNum >= textLines.Length)
         {
-            hintText.text = "Click to begin!";
+            hintText.text = finalText;
         }
         mySource.PlayOneShot(monologueClips[currentNum]);
         monologueText.text = textLines[currentNum];
