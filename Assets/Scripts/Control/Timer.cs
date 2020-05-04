@@ -14,7 +14,7 @@ public class Timer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        timeLeft = 120f;
+        timeLeft = 600f;
         timeUp = false;
     }
 
@@ -26,14 +26,7 @@ public class Timer : MonoBehaviour
         if (timeLeft <= 0f && !timeUp)
         {
             timeUp = true;
-            timerText.text = "Press R to Restart";
-        }
-        if (timeUp)
-        {
-            if (Input.GetKeyDown(KeyCode.R))
-            {
-                SceneManager.LoadScene("PlayableTestScene");
-            }
+            SceneManager.LoadScene("Lose Scene");
         }
     }
 }

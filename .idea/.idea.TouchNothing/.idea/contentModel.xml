@@ -48,6 +48,7 @@
             <e p="ObstacleScript.cs" t="Include" />
             <e p="ToolScript.cs" t="Include" />
           </e>
+          <e p="Restarter.cs" t="Include" />
           <e p="Switches" t="Include">
             <e p="SingleSwitch.cs" t="Include" />
             <e p="SwitchPuzzle.cs" t="Include" />
