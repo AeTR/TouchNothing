@@ -16,6 +16,7 @@
             <e p="movingPanelAnimBehavior.cs" t="Include" />
             <e p="switchanimationControl.cs" t="Include" />
           </e>
+          <e p="Beginner.cs" t="Include" />
           <e p="Big Buttons" t="Include">
             <e p="BiggerButton.cs" t="Include" />
             <e p="PushBigButton.cs" t="Include" />
