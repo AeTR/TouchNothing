@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="$PROJECT_DIR$/../Library/Caches/Rider2019.2/extResources" t="IncludeRecursive" />
-    <e p="$PROJECT_DIR$/../Library/Caches/Rider2019.2/resharper-host/local/Transient/ReSharperHost/v192/SolutionCaches/_TouchNothing.-699054205.00" t="ExcludeRecursive" />
-    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+    <e p="C:\Users\Euris\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Euris\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_TouchNothing.2070653223.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Euris\Desktop\FINAL\TouchNothing" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="curveScript.cs" t="Include" />
@@ -16,7 +16,6 @@
             <e p="movingPanelAnimBehavior.cs" t="Include" />
             <e p="switchanimationControl.cs" t="Include" />
           </e>
-          <e p="Beginner.cs" t="Include" />
           <e p="Big Buttons" t="Include">
             <e p="BiggerButton.cs" t="Include" />
             <e p="PushBigButton.cs" t="Include" />
@@ -40,7 +39,6 @@
             <e p="PuzzleScript.cs" t="Include" />
           </e>
           <e p="juiceScript.cs" t="Include" />
-          <e p="MonoManager.cs" t="Include" />
           <e p="Nav Arrows" t="Include">
             <e p="ArrowPuzzle.cs" t="Include" />
             <e p="NavArrow.cs" t="Include" />
@@ -49,8 +47,6 @@
             <e p="ObstacleScript.cs" t="Include" />
             <e p="ToolScript.cs" t="Include" />
           </e>
-          <e p="QuitManager.cs" t="Include" />
-          <e p="Restarter.cs" t="Include" />
           <e p="Switches" t="Include">
             <e p="SingleSwitch.cs" t="Include" />
             <e p="SwitchPuzzle.cs" t="Include" />
@@ -59,7 +55,7 @@
       </e>
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />
-      <e p="Temp/bin" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
       <e p="TouchNothing.sln" t="IncludeFlat" />
     </e>
   </component>
