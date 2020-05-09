@@ -17,6 +17,8 @@ public class ButtonPuzzleScript : PuzzleScript
     public Animator myAnim;
 
     public string arrowString;
+
+    public AudioClip phase1Sound, successTone, positive, negative;
     // Start is called before the first frame update
     void Start()
     {
@@ -49,7 +51,7 @@ public class ButtonPuzzleScript : PuzzleScript
                 Debug.Log("Set to true");
                 temp.pushable = true;
             }
-
+            puzzleSource.PlayOneShot(phase1Sound);
             currentKey = 0;
         }
     }
@@ -62,6 +64,7 @@ public class ButtonPuzzleScript : PuzzleScript
             if (currentKey < 9)
             {
                 currentKey++;
+                puzzleSource.PlayOneShot(positive);
                 Debug.Log(currentKey);
                 if (currentKey <= 8)
                 {
@@ -71,19 +74,17 @@ public class ButtonPuzzleScript : PuzzleScript
             }
             if (currentKey >= 9)
             {
+                puzzleSource.PlayOneShot(successTone);
                 Debug.Log("Puzzle freakin solved");
-                IncreaseTime(7f);
                 //puzzle solved, do the thing
                 Solve();
             }
         }
         else
         {
+            puzzleSource.PlayOneShot(negative);
             Debug.Log("Incorrect");
             currentKey = 0;
-            DecreaseTime(2f);
-            //reduce the timer
-            //play bad sound
         }
     }
 

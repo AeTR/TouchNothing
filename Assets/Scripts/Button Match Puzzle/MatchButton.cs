@@ -32,6 +32,7 @@ public class MatchButton : MechanismScript
     {
         if (pushable)
         {
+            mySource.PlayOneShot(myInteractSound);
             myAnimator.SetTrigger(interactTrigger);
             //InteractEvent();
             buttonPuzzle.CheckSolution(mySymbol);

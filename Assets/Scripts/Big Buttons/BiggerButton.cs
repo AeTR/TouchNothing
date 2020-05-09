@@ -8,6 +8,7 @@ public class BiggerButton : MechanismScript
 
     public new void Interact()
     {
+        mySource.PlayOneShot(myInteractSound);
         SceneManager.LoadScene("Win Scene");
     }
 }
