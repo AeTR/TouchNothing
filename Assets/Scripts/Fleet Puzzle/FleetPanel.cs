@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class FleetPanel : PuzzleScript
 {
+    public AudioClip positiveBeep, negativeBoop, solveTone;
     public int[] properOrder;
 
     public int currentNum;
@@ -12,17 +13,21 @@ public class FleetPanel : PuzzleScript
     {
         if (tempNum == properOrder[currentNum])
         {
+            
             currentNum++;
             if (currentNum >= properOrder.Length && !solved)
             {
+                puzzleSource.PlayOneShot(solveTone);
                 Solve();
-                IncreaseTime(15f);
+            }
+            else
+            {
+                puzzleSource.PlayOneShot(positiveBeep);
             }
         }
         else
         {
-            Debug.Log("Frack");
-            DecreaseTime(3f);
+            puzzleSource.PlayOneShot(negativeBoop);
             currentNum = 0;
         }
     }

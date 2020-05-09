@@ -4,6 +4,7 @@ using UnityEngine;
 
 public abstract class PuzzleScript : MonoBehaviour
 {
+    public AudioSource puzzleSource;
     public GameObject nextPuzzle;
     public Timer myTimer;
     public bool solved;

@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ArrowPuzzle : MonoBehaviour
+public class ArrowPuzzle : PuzzleScript
 {
     public bool[,] meteorArray;
     public NavArrow leftArrow, upArrow, rightArrow;
     public int shipX, shipY;
+    public AudioClip resetClip, successClip, moveClip;
 
     public GameObject nextThing;
     // Start is called before the first frame update
@@ -42,6 +43,7 @@ public class ArrowPuzzle : MonoBehaviour
     {
         if (meteorArray[shipX, shipY])
         {
+            puzzleSource.PlayOneShot(resetClip);
             Debug.Log("You frickin crashed!");
             shipX = 1;
             shipY = 0;
@@ -50,12 +52,16 @@ public class ArrowPuzzle : MonoBehaviour
         {
             if (shipY == 6)
             {
+                puzzleSource.PlayOneShot(successClip);
                 Debug.Log("You got it!");
-                nextThing.SetActive(true);
-                gameObject.SetActive(false);
+                Solve();
+                leftArrow.pushable = false;
+                rightArrow.pushable = false;
+                upArrow.pushable = false;
             }
             else
             {
+                puzzleSource.PlayOneShot(moveClip);
                 if (shipX == 0)
                 {
                     leftArrow.pushable = false;
