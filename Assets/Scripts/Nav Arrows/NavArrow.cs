@@ -6,6 +6,7 @@ public class NavArrow : MechanismScript
 {
     public bool pushable;
     public ArrowPuzzle myArrowPuzzle;
+    public AudioClip borderSound;
     public enum ArrowType
     {
         Left,
@@ -24,6 +25,7 @@ public class NavArrow : MechanismScript
     {
         if (pushable)
         {
+            mySource.PlayOneShot(myInteractSound);
             myAnimator.SetTrigger(interactTrigger);
             switch (myType)
             {
@@ -41,7 +43,9 @@ public class NavArrow : MechanismScript
         }
         else
         {
+            mySource.PlayOneShot(borderSound);
             Debug.Log("Can't do that!");
+            
         }
     }
 }

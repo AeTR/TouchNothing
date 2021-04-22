@@ -15,6 +15,7 @@ public class SingleSwitch : MechanismScript
 
     public new void Interact()
     {
+        mySource.PlayOneShot(myInteractSound);
         myAnimator.SetTrigger(interactTrigger);
         if (up)
         {

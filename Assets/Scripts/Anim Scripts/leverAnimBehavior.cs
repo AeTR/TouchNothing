@@ -15,8 +15,10 @@ public class leverAnimBehavior : MechanismScript
     {
         if (!thrusted)
         {
+            mySource.PlayOneShot(myInteractSound);
             myAnimator.SetTrigger(interactTrigger);
             nextThing.SetActive(true);
+            thrusted = true;
         }
     }
 }

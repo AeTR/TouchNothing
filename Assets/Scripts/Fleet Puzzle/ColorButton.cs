@@ -10,6 +10,7 @@ public class ColorButton : MechanismScript
 
     public new void Interact()
     {
+        mySource.PlayOneShot(myInteractSound);
         myAnimator.SetTrigger(interactTrigger);
         fleet.CheckFleetPuzzle(buttonNum);
     }

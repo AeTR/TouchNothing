@@ -20,6 +20,7 @@ public class SwapButton : MechanismScript
     {
         if (pushable)
         {
+            mySource.PlayOneShot(myInteractSound);
             buttonPuzzle.DisableEnableArrows(false);
             myAnimator.SetTrigger(interactTrigger);
             SwapButtons();

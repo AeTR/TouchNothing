@@ -17,6 +17,7 @@ public class PushBigButton : MechanismScript
 
     public new void Interact()
     {
+        mySource.PlayOneShot(myInteractSound);
         myAnimator.SetTrigger("PressingAgain");
         if (!pressedYet)
         {
